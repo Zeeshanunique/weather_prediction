@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+}
+
+.tab-content {
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.prediction-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Highlight the best-performing model in the metrics table */
+.best-model {
+    font-weight: bold;
+    background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+/* Station map styling */
+#taiwan-map {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.station-marker {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.station-marker:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+} 
