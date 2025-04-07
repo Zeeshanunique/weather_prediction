@@ -38,9 +38,6 @@ venv.bak/
 # PyCharm
 .idea/
 
-# Data files
-*.csv
-*.sqlite
 
 # Logs
 logs/
