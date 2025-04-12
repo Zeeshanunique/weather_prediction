@@ -7,6 +7,5 @@ flask
 joblib
 google-generativeai
 python-dotenv
-pickle
-traceback
+
 

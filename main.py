@@ -11,7 +11,6 @@ from io import BytesIO
 import google.generativeai as genai
 from datetime import datetime, timedelta
 import random
-import pickle
 import traceback
 from dotenv import load_dotenv
 
@@ -24,7 +23,11 @@ app = Flask(__name__)
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")  # Load API key from environment variables
 if not GOOGLE_API_KEY:
     print("WARNING: GOOGLE_API_KEY not found in environment variables. Please check your .env file.")
+else:
+    print(f"Using GOOGLE_API_KEY: {GOOGLE_API_KEY}")  # Display the API key in the console
+
 genai.configure(api_key=GOOGLE_API_KEY)
+
 
 # Global variables
 model = None
@@ -984,4 +987,4 @@ if __name__ == '__main__':
     load_gemini_model()
     
     # Start the Flask server
-    app.run(debug=True) 
+    app.run(debug=True)
